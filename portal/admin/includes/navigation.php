@@ -27,7 +27,7 @@
                         <div class="drop-scroll">
                             
                              <?php
-                $result = $db->prepare("SELECT e.*, a.agency_name FROM emergency e INNER JOIN agency a ON e.agency_id = a.agency_id WHERE status = 'Pending' ORDER BY id DESC ");
+                $result = $db->prepare("SELECT e.*, a.agency_name FROM emergency e INNER JOIN agency a ON e.agency_id = a.agency_id WHERE e.status = 'Pending' ORDER BY e.id DESC ");
                 $result->execute();
                 for($i=0; $row = $result->fetch(); $i++){   
                ?> 
@@ -39,7 +39,7 @@
 												<img alt="John Doe" src="assets/img/user.jpg" class="img-fluid">
 											</span>
 											<div class="media-body">
-												<p class="noti-details">They is a <?php echo $row['case_severity'] ?> emergency at <span class="noti-title"><?php echo $row['address'] ?>, <?php echo $row['state'] ?></span> the <span class="noti-time"><?php echo $row['agency_name'] ?></span> is needed</p>
+												<p class="noti-details">There is a <?php echo $row['case_severity'] ?> emergency at <span class="noti-title"><?php echo $row['address'] ?>, <?php echo $row['state'] ?></span> the <span class="noti-time"><?php echo $row['agency_name'] ?></span> is needed</p>
 												<p class="noti-time"><span class="notification-time"><?php echo $row['date'] ?></span></p>
 											</div>
                                         </div>

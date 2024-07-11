@@ -53,6 +53,10 @@
                             <label>Mobile Number</label>
                             <input type="text" name="phone" class="form-control"> 
                         </div>
+                        <div class="form-group">
+                                <label>Vehicle Details</label>
+                                <textarea cols="30" rows="4" name="description" class="form-control"></textarea>
+                            </div>
                         <div class="form-group" hidden>
                             <label>User ID</label>
                             <input type="text" name="user_id"  value="<?php echo rand(1000,9999); ?>" class="form-control"> 

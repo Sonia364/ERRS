@@ -45,7 +45,7 @@ function clean($str) {
 			$_SESSION['SESS_EMAIL'] = $member['email'];
 			$_SESSION['SESS_PHONE_NUMBER'] = $member['phone'];
 			$_SESSION['SESS_STATE'] = $member['state'];
-			$_SESSION['SESS_ADDRESS'] = $member['address'];			
+			$_SESSION['SESS_VEHICLE_INFO'] = $member['vehicle_info'];			
 			$_SESSION['SESS_PRO_PIC'] = $member['photo'];
 			$_SESSION['SESS_USERNAME'] = $member['username'];
 			$_SESSION['SESS_USERS_ID'] = $member['user_id'];

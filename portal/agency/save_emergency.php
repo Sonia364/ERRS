@@ -6,18 +6,20 @@ $a = $_POST['emergency_id'];
 $b = $_POST['agency_id'];
 $c = $_POST['case_severity'];
 $d = $_POST['emergency_category'];
-$e = $_POST['phone_number'];
-$f = $_POST['address'];
-$g = $_POST['name'];
-$h = $_POST['state'];
+$e = $_POST['state'];
+$f = $_POST['phone_number'];
+$g = $_POST['address'];
+$h = $_POST['name'];
 $i = $_POST['status'];
-$j = $_POST['victim_id'];
+$j = $_POST['email'];
 $k = $_POST['dates'];
-$l = $_POST['email'];
+$l = $_POST['victim_id'];
 $m = $_POST['description']; 
 
 $file_name = '';
 $file_name_new = '';
+
+// print_r($_POST)
 
 if (!empty($_FILES['photo']['name'])) {
     $file_name = strtolower($_FILES['photo']['name']);
@@ -35,7 +37,11 @@ if (!empty($_FILES['photo']['name'])) {
     }
 }
 
-$sql = "INSERT INTO emergency (emergency_id,agency_id,case_severity,emergency_category,phone_number,address,name,state,status,victim_id,dates,email,description,photo) VALUES (:a,:b,:c,:d,:e,:f,:g,:h,:i,:j,:k,:l,:m,:n)";
+
+// $sql = "INSERT INTO emergency (emergency_id,agency_id,case_severity,emergency_category,phone_number,address,name,state,status,victim_id,dates,email,description,photo) VALUES (:a,:b,:c,:d,:e,:f,:g,:h,:i,:j,:k,:l,:m,:n)";
+
+$sql = "INSERT INTO `emergency` (`emergency_id`, `agency_id`, `case_severity`, `emergency_category`, `state`, `phone_number`, `address`, `name`, `status`, `email`, `dates`, `victim_id`, `description`, `photo`) VALUES (:a,:b,:c,:d,:e,:f,:g,:h,:i,:j,:k,:l,:m,:n)";
+
 $q = $db->prepare($sql);
 $q->bindParam(':a', $a);
 $q->bindParam(':b', $b);

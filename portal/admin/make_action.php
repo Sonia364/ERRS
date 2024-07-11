@@ -59,7 +59,7 @@
                     <div class="col-lg-8 offset-lg-2">
                         <?php
                                        $id=$_GET['id'];
-                            $result = $db->prepare("SELECT * FROM emergency where id= :post_id");
+                                       $result = $db->prepare("SELECT e.*, u.vehicle_info FROM emergency e INNER JOIN users u ON e.victim_id = u.user_id where e.id= :post_id");
                             $result->bindParam(':post_id', $id);
                             $result->execute();
                             for($i=0; $row = $result->fetch(); $i++){                        
@@ -143,6 +143,11 @@
                                     <div class="form-group">
                                         <label>Address</label>
                                         <p readonly><?php echo $row['address']; ?></p>
+                                    
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Vehicle Details</label>
+                                        <p readonly><?php echo $row['vehicle_info']; ?></p>
                                     
                                     </div>
                                 </div>

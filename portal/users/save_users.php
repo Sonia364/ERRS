@@ -5,11 +5,12 @@ include('includes/connect.php');
 
 $a = $_POST['name'];
 $b = $_POST['email'];
-$c = $_POST['state'];
 $d = $_POST['username'];
 $e = $_POST['password'];
+$c = $_POST['state'];
 $f = $_POST['phone'];
 $g = $_POST['user_id'];
+$h = $_POST['description'];
 
 // Check if username, email, or phone already exist
 $query = "SELECT * FROM users WHERE username = :username OR email = :email OR phone = :phone";
@@ -31,9 +32,10 @@ if ($stmt->rowCount() > 0) {
         // move uploaded file to destination
         if(move_uploaded_file($_FILES['photo']['tmp_name'], $path)) {
             // insert record into database with filename
-            $sql = "INSERT INTO users (name,email,state,username,password,phone,user_id,photo) VALUES (:a,:b,:c,:d,:e,:f,:g,:h)";
+            $sql = "INSERT INTO `users` (`name`,`email`,`state`,`username`,`password`,`phone`,`user_id`,`vehicle_info`,`photo`) VALUES (:a,:b,:c,:d,:e,:f,:g,:h,:i)";
             $q = $db->prepare($sql);
-            $q->execute(array(':a'=>$a,':b'=>$b,':c'=>$c,':d'=>$d,':e'=>$e,':f'=>$f,':g'=>$g,':h'=>$file_name_new));
+        
+            $q->execute(array(':a'=>$a,':b'=>$b,':c'=>$c,':d'=>$d,':e'=>$e,':f'=>$f,':g'=>$g,':h'=>$h,':i'=>$file_name_new));
             if($q){
                 echo "<script>alert('Your account is created successfully! Login');</script>";
                 echo "<script>window.location.href ='sign-in.php'</script>";

@@ -25,7 +25,9 @@
                        
                         <div class="drop-scroll">
                         <?php
-                $result = $db->prepare("SELECT * FROM emergency WHERE agency_id = {$_SESSION['SESS_AGENCY_ID']} AND status = 'Pending' ORDER BY id DESC  ");
+                // $result = $db->prepare("SELECT * FROM emergency WHERE agency_id = {$_SESSION['SESS_AGENCY_ID']} AND status = 'Pending' ORDER BY id DESC  ");
+                $result = $db->prepare("SELECT e.*, a.agency_name FROM `emergency` e INNER JOIN `agency` a ON e.agency_id = a.agency_id WHERE e.agency_id = {$_SESSION['SESS_AGENCY_ID']} AND e.status = 'Pending' ORDER BY e.id DESC  ");
+
                 $result->execute();
                 for($i=1; $row = $result->fetch(); $i++){ 
                

@@ -57,8 +57,8 @@
                                                     <span class="text"><?php echo $_SESSION['SESS_STATE'];?></span>
                                                 </li>
                                                 <li>
-                                                    <span class="title">Address:</span>
-                                                    <span class="text"><?php echo $_SESSION['SESS_ADDRESS'];?></span>
+                                                    <span class="title">Vehicle Info:</span>
+                                                    <span class="text"><?php echo $_SESSION['SESS_VEHICLE_INFO'];?></span>
                                                 </li>
                                                 
                                             </ul>
