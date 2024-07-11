@@ -25,7 +25,7 @@
 
                     <form method="post" action="save_users.php" enctype="multipart/form-data" class="form-signin">
 						<div class="account-logo">
-                            <a href="index-2.html"><img src="assets/img/logo-dark.png" alt=""></a><br>
+                            <a href="index-2.html"><img src="assets/img/AV-logo-main.png" alt=""></a><br>
                             <p>EMERGENCY MANAGEMENT SYSTEM</p>
                         </div>
                             

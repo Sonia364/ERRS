@@ -1,7 +1,7 @@
 <div class="header">
 			<div class="header-left">
 				<a href="index-2.html" class="logo">
-					<img src="assets/img/logo.png" width="35" height="35" alt=""> <span>EMS</span>
+                <img src="assets/img/AV-logo-main.png" width="80" height="40" alt=""> <span>EMS</span>
 				</a>
 			</div>
 			<a id="toggle_btn" href="javascript:void(0);"><i class="fa fa-bars"></i></a>
