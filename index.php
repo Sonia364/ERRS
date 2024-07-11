@@ -194,13 +194,13 @@
                 $result->execute();
                 for($i=0; $row = $result->fetch(); $i++){   
                ?> 
-                                <div class="col-md-4  col-sm-6">
+                                <div class="col-md-3  col-sm-6">
                                     <div class="uni-shortcode-icon-box-1-default">
                                         <div class="item-icons">
                                             <img src="uploads/<?php echo $row['photo']; ?>" alt="" class="img-responsive">
                                         </div>
                                         <div class="item-caption">
-                                            <h4><?php echo $row['agency_name'] ;?> <br> <small><?php echo $row['state'] ;?></small></h4>
+                                            <h6><?php echo $row['agency_name'] ;?> <br> <small><?php echo $row['state'] ;?></small></h6>
                                             <h3 style="text-align: center;"><?php echo $row['phone_number'] ;?></h3>
                                             <h3 style="text-align: center;"><?php echo $row['email'] ;?></h3>
                                             <p></p>

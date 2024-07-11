@@ -1270,11 +1270,15 @@ a:hover {
 }
 
 .footer-default .copyright-area {
-  background-image: -webkit-gradient(linear, left top, right top, from(#6d69dd), color-stop(50%, #ffffff), to(#6d69dd)), -webkit-gradient(linear, left top, left bottom, from(#6d69dd), to(#6d69dd));
+  /* background-image: -webkit-gradient(linear, left top, right top, from(#6d69dd), color-stop(50%, #ffffff), to(#6d69dd)), -webkit-gradient(linear, left top, left bottom, from(#6d69dd), to(#6d69dd));
   background-image: -webkit-linear-gradient(left, #6d69dd, #ffffff 50%, #6d69dd), -webkit-linear-gradient(#6d69dd, #6d69dd);
   background-image: -o-linear-gradient(left, #6d69dd, #ffffff 50%, #6d69dd), -o-linear-gradient(#6d69dd, #6d69dd);
   background-image: linear-gradient(to right, #6d69dd, #ffffff 50%, #6d69dd), linear-gradient(#6d69dd, #6d69dd);
-  background-blend-mode: multiply, normal;
+  background-blend-mode: multiply, normal; */
+  background-image: url(../images/bg1.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .footer-default .copyright-area p {
@@ -1359,8 +1363,8 @@ a:hover {
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  background-color: #6d69dd;
-  border: solid 3px #2d3840;
+  background-color: #7d1f4f;
+  border: solid 3px #fff;
   font-family: FontAwesome;
   font-size: 18px;
   font-weight: normal;
@@ -1515,10 +1519,11 @@ a:hover {
   background: url("../images/services/underline1.png") no-repeat;
   background-position: center center;
   background-size: cover;
-  width: 120px;
-  height: 21px;
-  margin: 0 auto;
-  margin-top: 20px;
+  width: 20%;
+    height: 2px;
+    margin: 0 auto;
+    margin-top: 20px;
+    background: #6d69dd;
 }
 
 .uni-home-title .uni-line {
@@ -1568,10 +1573,10 @@ a:hover {
 }
 
 .uni-banner .caption {
-  text-align: right;
+  text-align: center;
   padding: 40px;
-  background-color: rgb(75 187 216);
-  float: right;
+  /* background-color: rgb(75 187 216); */
+  /* float: right; */
 }
 
 .uni-banner .caption h1 {
@@ -1672,7 +1677,7 @@ a:hover {
   line-height: normal;
   letter-spacing: normal;
   text-align: center;
-  color: #333333;
+  color: #fff;
   -webkit-transition: all 0.5s;
   -o-transition: all 0.5s;
   transition: all 0.5s;
@@ -1694,7 +1699,7 @@ a:hover {
   line-height: normal;
   letter-spacing: normal;
   text-align: center;
-  color: #333333;
+  color: #fff;
   -webkit-transition: all 0.5s;
   -o-transition: all 0.5s;
   transition: all 0.5s;
@@ -1730,7 +1735,7 @@ a:hover {
 
 /*DEPARTMENT*/
 .uni-hơm-1-department {
-  padding-top: 100px;
+  padding-top: 50px;
 }
 
 .uni-hơm-1-department .uni-home-title {
@@ -7548,10 +7553,24 @@ a:hover {
   border: solid 1px #ffffff;
   border-radius: 50%;
   margin: auto;
+  overflow: hidden;
+}
+
+.item-icons img {
+  width: 100%;
+  height: 100%;
+}
+
+.uni-banner {
+  background-image: url('../images/bg1.jpg');
+  background-size: cover; /* Ensures the image covers the entire background */
+  background-position: center; /* Centers the image horizontally and vertically */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  /* height: 40vh; */
 }
 
 .uni-shortcode-icon-box-1-default .item-caption {
-  padding: 70px 40px 40px 40px;
+  padding: 70px 0px 20px 0px;
 }
 
 .uni-shortcode-icon-box-1-default .item-caption h4 {
@@ -7566,6 +7585,11 @@ a:hover {
   color: #333333;
   text-transform: uppercase;
   margin-bottom: 20px;
+}
+
+.item-caption h6 {
+  text-align: center;
+  margin-bottom: 10px;
 }
 
 .uni-shortcode-icon-box-1-default .item-caption p {
@@ -7637,7 +7661,7 @@ a:hover {
 
 /*icons box 3*/
 .uni-shortcode-icons-box-3 {
-  padding-top: 20px;
+  padding-top: 50px;
 }
 
 .uni-shortcode-icons-box-3-default {
@@ -7665,9 +7689,9 @@ a:hover {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  width: 150px;
+  width: 100%;
   height: 150px;
-  background-color: #6374de;
+  background-color: #499de3;
   font-family: FontAwesome;
   font-size: 36px;
   font-weight: normal;

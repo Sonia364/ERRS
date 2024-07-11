@@ -1935,6 +1935,8 @@ ul.chat-user-total li i.old-users {
 .avatar > img {
 	width: 100%;
 	display: block;
+	height: 100%;
+    object-fit: contain;
 }
 .chat.chat-left .chat-bubble:first-child .chat-content {
 	border-top-left-radius: 20px;
