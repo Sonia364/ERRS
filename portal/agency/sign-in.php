@@ -31,7 +31,7 @@ session_start();
                 <div class="account-box">
                     <form method="post" action="process-login.php" class="form-signin">
                         <div class="account-logo">
-                            <a href="index-2.html"><img src="assets/img/logo-dark.png" alt=""></a>
+                            <a href="index-2.html"><img src="assets/img/AV-logo-main.png" alt=""></a>
                             <br>
                             <p>EMERGENCY MANAGEMENT SYSTEM - AGENCY </p>
 
