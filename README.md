@@ -2,23 +2,21 @@
 
 ![ERRS Banner](/images/home_img.png)
 
-The Emergency Response & Reporting System is an online platform developed using PHP and MySQL that facilitates the reporting and management of immediate incidents and emergency situations. Whether it's a vehicle accident, criminal activity, or health scare, the system provides a quick and efficient way to notify and alert the appropriate authorities and responders.
+The Emergency Response & Reporting System is an online platform developed using PHP and MySQL, specifically designed to handle immediate incidents and emergency situations related to autonomous vehicles. Whether it's an accident, operational anomaly, or critical system failure, the system offers a rapid and effective means to notify and alert the necessary authorities and responders.
 
 ## Key Features
 
-- **Incident Reporting:** Users can easily submit incident reports through our intuitive and user-friendly interface, powered by a frontend template from www.templateshub.net/.
+- **Incident Reporting:** Users can easily submit incident reports through our intuitive and user-friendly interface, designed specifically for autonomous vehicle scenarios.
 
-- **Real-time Notification:** The system employs a real-time notification mechanism, instantly alerting authorities and responders to new incident reports, ensuring swift action.
+- **Real-time Notification:** The system employs a real-time notification mechanism that promptly alerts authorities and responders to new incident reports, ensuring rapid response and action.
 
-- **Categorization and Prioritization:** Incidents are automatically categorized based on type and severity, allowing responders to prioritize their actions effectively.
+- **Categorization and Prioritization:** Incidents are automatically categorized according to their type and severity, enabling responders to prioritize their actions efficiently and effectively.
 
-- **Geo-location Mapping:** The system captures and displays incident locations on a map, aiding in resource allocation and navigation for responders.
-
-- **User Accounts:** Users can create accounts to access additional features, view their reported incidents, and receive status updates on their reports.
+- **User Accounts:** Users have the ability to create accounts, granting them access to additional features such as viewing their reported incidents and receiving real-time status updates on their reports.
 
 ## Installation
 
-To set up the Emergency Management System locally, follow these steps:
+To set up the Emergency Response & Reporting System locally, follow these steps:
 
 1. Clone this repository to your local machine:
 
@@ -38,7 +36,7 @@ To set up the Emergency Management System locally, follow these steps:
 
 1. Register or log in with your user account to access the reporting dashboard.
 
-2. Fill out the incident report form, providing all relevant information about the emergency.
+2. Complete the incident report form, providing all necessary information about the emergency.
 
 3. Submit the report, and the system will automatically notify the designated authorities and responders.
 
