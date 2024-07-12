@@ -40,7 +40,7 @@
 												<img alt="" src="assets/img/user.jpg" class="img-fluid">
 											</span>
 											<div class="media-body">
-												<p class="noti-details">They is a pending <?php echo $row['case_severity'] ?> emergency at <span class="noti-title"><?php echo $row['address'] ?>, <?php echo $row['state'] ?></span> the <span class="noti-time"><?php echo $row['agency_name'] ?></span> is needed</p>
+												<p class="noti-details">There is a pending <?php echo $row['case_severity'] ?> emergency at <span class="noti-title"><?php echo $row['address'] ?>, <?php echo $row['state'] ?></span> the <span class="noti-time"><?php echo $row['agency_name'] ?></span> is needed</p>
 												<p class="noti-time"><span class="notification-time"><?php echo $row['date'] ?></span></p>
 											</div>
                                         </div>
