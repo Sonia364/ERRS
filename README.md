@@ -24,7 +24,7 @@ To set up the Emergency Response & Reporting System locally, follow these steps:
    git clone https://github.com/Sonia364/ERRS.git
    ```
 
-2. Import the provided MySQL database schema and data to your local MySQL server.
+2. Import the provided MySQL database schema from the 'database' directory to your local MySQL server.
 
 3. Configure the necessary database connection settings in the PHP files.
 
